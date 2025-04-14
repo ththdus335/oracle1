@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "BookkMyungjo_Bold";
+        src: url(./webfonts/BookkMyungjo_Bold.woff) format("woff");
+      }
+      @font-face {
+        font-family: "BookkMyungjo_Light";
+        src: url(./webfonts/BookkMyungjo_Light.woff) format("woff");
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .wrap {
+        width: 100%;
+        height: 100vh;
+        max-width: 1904px;
+      }
+      .con1 {
+        overflow: hidden;
+      }
+      .con1 video {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        object-fit: cover;
+        vertical-align: top;
+      }
+      .nav {
+        position: relative;
+      }
+      .nav ul {
+        list-style: none;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        align-items: center;
+      }
+      .con1 .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .con1 .txt h1 {
+        font-family: "BookkMyungjo_Light";
+        font-size: 60px;
+        font-weight: normal;
+        margin-bottom: 60px;
+        letter-spacing: -5.5px;
+      }
+      .con1 .txt p:last-child {
+        font-size: 20px;
+        letter-spacing: -2px;
+        line-height: 35px;
+        font-weight: 200;
+      }
+      .con2 {
+        display: flex;
+      }
+      .con2 .left {
+        flex: 1;
+        height: 400px;
+        background-color: #536133;
+      }
+
+      .con2 .right {
+        flex: 1;
+        height: 400px;
+        background-color: #e7e7e7;
+      }
+
+      .con3 .txt {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        text-align-last: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="nav">
+        <ul>
+          <li><img src="" alt="" /></li>
+          <li>온라인 상담</li>
+          <li>온라인 상담</li>
+          <li>카카오톡 상담</li>
+        </ul>
+      </div>
+      <div class="con1">
+        <video autoplay muted loop src="./v1.mp4" type="video/mp4"></video>
+        <div class="txt">
+          <p><img src="./logo.png" alt="logo" /></p>
+          <h1>피부시술은 의료진의 실력도 중요하지만 장비도 좋아야 합니다</h1>
+          <p>
+            대전둔산동 오라클피부과는 고객님의 아름다움을 위해 장비와 시술 에
+            대한 투자를 아끼지 않고 있으며<br />
+            현재 운영중인 수십 여종의 장비는 여러 기관에서 인정받은 고효율
+            의료기기로,<br />
+            보다나은 의료서비스를 통해 고객 여러분의 믿음에 보답하도록
+            하겠습니다.
+          </p>
+        </div>
+      </div>
+      <div class="con2">
+        <div class="left">
+          <h1><span>Oracle</span> Best Program. 01</h1>
+        </div>
+        <div class="right"></div>
+      </div>
+      <div class="con3">
+        <h1>
+          피부과 전문의 20여년의<br />
+          정품ㆍ정량 보톡스, 필러 노하우
+        </h1>
+        <div class="txt">
+          <div class="point1">
+            <p><img src="./sb_01.png" alt="" /></p>
+            <p>보톡스</p>
+            <p>
+              아름다움에 투자하는 시간,<br />
+              단 10분
+            </p>
+          </div>
+          <div class="point2">
+            <p><img src="./sb_02.png" alt="" /></p>
+
+            <p>보톡스</p>
+            <p>
+              아름다움에 투자하는 시간,<br />
+              단 10분
+            </p>
+          </div>
+          <div class="point3">
+            <p><img src="./sb_03.png" alt="" /></p>
+
+            <p>보톡스</p>
+            <p>
+              아름다움에 투자하는 시간,<br />
+              단 10분
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
